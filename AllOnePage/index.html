@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galleria di Foto</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <form id="photoForm" action="mailto:grafica@olalla.it" method="post" enctype="text/plain">
+        
+                       <div class="photo-container">
+                <div class="photo" style="background-image: url('foto1.jpg');"  onclick="openModal('foto1.jpg')"></div>
+                <div class="options">
+                    <label><input type="radio" name="foto1_opzioni" value="si"> Si stampi</label>
+                    <label><input type="radio" name="foto1_opzioni" value="modifica"> Da revisionare</label>
+                </div>
+                <textarea class="description" name="foto1_descrizione" placeholder="Descrizione..."></textarea>
+            </div>       </form>
+            
+        <form id="photoForm" action="mailto:tuoindirizzoemail@example.com" method="post" enctype="text/plain">
+        
+                       <div class="photo-container">
+                        <div class="photo" style="background-image: url('foto2.jpg');"  onclick="openModal('foto2.jpg')"></div>
+                <div class="options">
+                    <label><input type="radio" name="foto2_opzioni" value="si"> Si stampi</label>
+                    <label><input type="radio" name="foto2_opzioni" value="modifica"> Da revisionare</label>
+                </div>
+                <textarea class="description" name="foto2_descrizione" placeholder="Descrizione..."></textarea>
+            </div>       </form>
+            
+        <form id="photoForm" action="mailto:tuoindirizzoemail@example.com" method="post" enctype="text/plain">
+        
+                       <div class="photo-container">
+                        <div class="photo" style="background-image: url('foto3.jpg');"  onclick="openModal('foto3.jpg')"></div>
+                <div class="options">
+                    <label><input type="radio" name="foto3_opzioni" value="si"> Si stampi</label>
+                    <label><input type="radio" name="foto3_opzioni" value="modifica"> Da revisionare</label>
+                </div>
+                <textarea class="description" name="foto3_descrizione" placeholder="Descrizione..."></textarea>
+            </div>       </form>
+            
+                                   <div class="photo-container">
+                                    <div class="photo" style="background-image: url('foto4.jpg');"  onclick="openModal('foto4.jpg')"></div>
+                <div class="options">
+                    <label><input type="radio" name="foto4_opzioni" value="si"> Si stampi</label>
+                    <label><input type="radio" name="foto4_opzioni" value="modifica"> Da revisionare</label>
+                </div>
+                <textarea class="description" name="foto4_descrizione" placeholder="Descrizione..."></textarea>
+            </div>       </form>
+            
+        <form id="photoForm" action="mailto:tuoindirizzoemail@example.com" method="post" enctype="text/plain">
+        
+                       <div class="photo-container">
+                        <div class="photo" style="background-image: url('foto5.jpg');"  onclick="openModal('foto5.jpg')"></div>
+                <div class="options">
+                    <label><input type="radio" name="foto5_opzioni" value="si"> Si stampi</label>
+                    <label><input type="radio" name="foto5_opzioni" value="modifica"> Da revisionare</label>
+                </div>
+                <textarea class="description" name="foto5_descrizione" placeholder="Descrizione..."></textarea>
+            </div>       </form>
+            
+        <form id="photoForm" action="mailto:tuoindirizzoemail@example.com" method="post" enctype="text/plain">
+        
+                       <div class="photo-container">
+                        <div class="photo" style="background-image: url('foto6.jpg');"  onclick="openModal('foto6.jpg')"></div>
+                <div class="options">
+                    <label><input type="radio" name="foto6_opzioni" value="si"> Si stampi</label>
+                    <label><input type="radio" name="foto6_opzioni" value="modifica"> Da revisionare</label>
+                </div>
+                <textarea class="description" name="foto6_descrizione" placeholder="Descrizione..."></textarea>
+            </div>       </form>
+            <!-- Ripetere il blocco per ogni foto fino a 10 foto -->
+            <div id="myModal" class="modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <img class="modal-content" id="img01">
+            </div>
+
+   
+    </div>
+                     <button type="submit" class="send-email">Invia Email</button>
+</body>
+</html>
